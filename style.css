@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Livvic:400,600&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    line-height: 1.5;
+}
+
+footer {
+    padding: 1% 0;
+    background-color: #aaa;
+}
+
+header {
+    padding: 12% 0;
+    text-align: center;
+}
+
+section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+}
+
+section:nth-child(even) {
+    background-color: #ddd;
+}
+a {
+    text-decoration: none;
+}
+
+.text-black {
+    color: black;
+}
+
+
+/*-------------------- navbar -------------------- */
+nav {
+    padding: 0 2rem;
+    background: #aaa;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    justify-content: space-between;
+    height: 0rem;
+    min-height: 8vh;
+    overflow-y: hidden;
+    transition: height 1s ease;
+    z-index: 10;
+}
+
+nav .nav-brand a {
+    display: block;
+    padding: 1rem 0;
+    font-family: 'Arial';
+    font-size: 1.6rem;
+}
+
+nav .nav-items {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+nav .nav-items .nav-link {
+    padding: 1.3rem 1rem;
+    font-family: 'Arial';
+    font-size: 1.1rem;
+}
+
+nav .nav-items .nav-link:hover {
+    background: white;
+}
+
+nav .nav-items .nav-link:hover a {
+    color: black;
+}
+
+nav .social {
+    padding: 1.3rem 0;
+}
+
+nav .social i {
+    padding: 0 .2rem;
+}
+
+nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.4rem 4rem;
+}
+
+nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+}
+
+.collapse {
+    height: 30rem;
+}
+
+.toggle-click, .toggle-click::before, .toggle-click::after {
+    width: 20px;
+}
+
+
+/*------------------ Home ------------------------*/
+#Home {
+    padding-top: 80px;
+    height: calc(100vh - 50px);
+}
+
+#Home .home-title {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 15px;;
+}
+
+/*------------------ About Me ------------------------*/
+#About {
+    height: calc(100vh - 50px);
+}
+.about-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 2px solid blue;
+}
+
+.aboutme {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.about-headshot {
+    text-align: center;
+}
+
+
+/*------------------ Portfolio ------------------------*/
+#Portfolio {
+    height: calc(100vh - 50px);
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    list-style: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    nav .nav-items {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column !important;
+        display: block !important;
+    }
+
+    nav .toggle-collapse {
+        display: initial;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* Mobile Phone */
+@media only screen and (max-width: 400px) {
+    body {
+        font-family: "Open Sans",
+        sans-serif; 
+        font-size: 20px;
+        color: #444;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    nav,
+    footer {
+        padding: 1% 0;
+        background-color: #aaa;
+    }
+    
+    nav {
+        position: relative;
+        width: 220px;
+        margin: 15px;
+    }
+    
+    header {
+        padding: 12% 0;
+    }
+    
+    section {
+        min-height: 200px;
+        padding: 6% 0;
+        background-color: #bbb;
+    }
+    
+    section:nth-child(even) {
+        background-color: #ddd;
+    }
+
+    /* #navigation { display: none} */
+    .inner-profile {
+        background: none repeat scroll 0 0 rgba(60, 70, 80, 0.7);
+        height: 100%;
+        left: 0;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    #Home {
+        height: 100%;
+        width: 100;
+    }
+      
+}
+  
+  
