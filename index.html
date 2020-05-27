@@ -4,7 +4,7 @@
     <title>Portfolio HTML wireframe</title>
     <meta name="viewport"  charset="utf-8" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -39,32 +39,13 @@
             </ul>
         </div>
         <div class="social text-black">
-            <i class="fa fa-facebook-f"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-youtube"></i>
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <i class="fa fa-file" aria-hidden="true"></i>
         </div>
-        
-
-
-        <!-- <ul>
-            <li class="mobile-profile">
-                <div class="inner-profile">
-                    <h3>Profile</h3>
-                </div>
-
-            </li>
-            <li class="menu-item"><a href="#">Home</a></li>
-            <li class="menu-item"><a href="#AboutMe">About Me</a></li>
-            <li class="menu-item"><a href="#Portfolio">Portfolio</a></li>
-            <li class="menu-item"><a href="#Resume">Resume</a>
-                <ul class="sub-meu">
-                    <li class="menu-item">Experience</li>
-                    <li class="menu-item">Experience</li>
-                </ul>
-            </li>
-        </ul> -->
     </nav>
+
     <main role="main">
         <header id="Home" role="banner">
             <h1 class="home-title">Landing Page</h1>
@@ -72,69 +53,193 @@
         </header>
 
         <section id="About" role="region">
-            <h2>About Me</h2>
             <div class="about-container">
-                <div class="aboutme about-bio">
-                    <p>Elit cupidatat pariatur fugiat esse ex incididunt. Adipisicing commodo amet minim proident elit incididunt irure voluptate dolor. Magna deserunt reprehenderit Lorem adipisicing nulla sit.</p>
-                </div>
-                <div class="aboutme about-headshot">
-                    <img src="https://via.placeholder.com/350">
-                </div>
-                <div class="aboutme about-info">
-                    <h3>My Info</h3>
-                    <h4><span>Name :</span> Full Name</h4>
-                    <h4><span>Email :</span> Email Address</h4>
-                    <h4><span>Location :</span> Location</h4>
-                    <h4><span>Seeking :</span> Full Time Opportunities</h4>
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="aboutme about-bio">
+                        <p>Elit cupidatat pariatur fugiat esse ex incididunt. Adipisicing commodo amet minim proident elit incididunt irure voluptate dolor. Magna deserunt reprehenderit Lorem adipisicing nulla sit.</p>
+                    </div>
+                    <div class="aboutme about-headshot">
+                        <img src="https://via.placeholder.com/350">
+                    </div>
+                    <div class="aboutme about-info">
+                        <h3>My Info</h3>
+                        <h4><span>Name :</span> Full Name</h4>
+                        <h4><span>Email :</span> Email Address</h4>
+                        <h4><span>Location :</span> Location</h4>
+                        <h4><span>Seeking :</span> Full Time Opportunities</h4>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="Portfolio" role="region">
-            <h2>Portfolio</h2>
             <div class="portfolio-container">
-                <li class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="http://placehold.it/290x180" alt="portfolio item">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Project Name 1</h3>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="http://placehold.it/290x180" alt="portfolio item">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Project Name 2</h3>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="http://placehold.it/290x180" alt="portfolio item">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Project Name 3</h3>
-                    </div>
-                </li>
-                <li class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="http://placehold.it/290x180" alt="portfolio item">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Project Name 4</h3>
-                    </div>
-                </li>
+                <h2>Portfolio</h2>
+                <ul>
+                    <li class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="http://placehold.it/290x180" alt="portfolio item">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Project Name 1</h3>
+                            <p>Description: Sunt ut exercitation laborum culpa qui quis laborum labore ipsum incididunt.</p>
+                            <p>Technologies: Qui aliqua excepteur et pariatur officia mollit officia magna.</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="http://placehold.it/290x180" alt="portfolio item">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Project Name 2</h3>
+                            <p>Description: Minim aute pariatur Lorem elit excepteur sit irure proident ipsum.</p>
+                            <p>Technologies: Dolore labore excepteur tempor tempor est enim deserunt sit id duis.</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="http://placehold.it/290x180" alt="portfolio item">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Project Name 3</h3>
+                            <p>Description: Excepteur non laboris exercitation sint amet excepteur quis id dolore incididunt.</p>
+                            <p>Technologies: Elit veniam laboris fugiat et tempor est esse in adipisicing ipsum.</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="http://placehold.it/290x180" alt="portfolio item">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Project Name 4</h3>
+                            <p>Description: Nisi veniam ipsum amet laboris ullamco cupidatat occaecat reprehenderit ipsum laboris.</p>
+                            <p>Technologies: Non Lorem in cillum tempor est ut laboris pariatur sint tempor dolor ea ex.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section id="Resume" role="region">
-            <h2>Resume</h2>
-            <h3>Experience</h3>
-            <h3>Education</h3>
+            
+            <div class="resume-container">
+                <h2>Resume</h2>
+
+                <div class="experience-container">
+                    <h3>Experience</h3>
+                    <ul>
+                        <li class="resume-item">
+                            <div class="resume-dates">
+                                Start Date - End Date
+                            </div>
+                            <div class="resume-image">
+                                <img src="http://placehold.it/290x180" alt="experience company">
+                            </div>
+                            <div class="resume-content">
+                                <span class="resume-info">Job Title</span>
+                                <p>Company Name</p>
+                            </div>
+                        </li>
+                        <li class="resume-item">
+                            <div class="resume-dates">
+                                Start Date - End Date
+                            </div>
+                            <div class="resume-image">
+                                <img src="http://placehold.it/290x180" alt="experience company">
+                            </div>
+                            <div class="resume-content">
+                                <span class="resume-info">Job Title</span>
+                                <p>Company Name</p>
+                            </div>
+                        </li>
+                        <li class="resume-item">
+                            <div class="resume-dates">
+                                Start Date - End Date
+                            </div>
+                            <div class="resume-image">
+                                <img src="http://placehold.it/290x180" alt="experience company">
+                            </div>
+                            <div class="resume-content">
+                                <span class="resume-info">Job Title</span>
+                                <p>Company Name</p>
+                            </div>
+                        </li>
+                        <li class="resume-item">
+                            <div class="resume-dates">
+                                Start Date - End Date
+                            </div>
+                            <div class="resume-image">
+                                <img src="http://placehold.it/290x180" alt="experience company">
+                            </div>
+                            <div class="resume-content">
+                                <span class="resume-info">Job Title</span>
+                                <p>Company Name</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <h3>Education</h3>
+                <div class="education-container">
+                    <ul>
+                        <li class="resume-item">
+                            <div class="resume-dates">
+                                Start Date - End Date
+                            </div>
+                            <div class="resume-image">
+                                <img src="http://placehold.it/290x180" alt="Education School">
+                            </div>
+                            <div class="resume-content">
+                                <span class="resume-info">Program/Degree</span>
+                                <p>School Name</p>
+                            </div>
+                        </li>
+                        <li class="resume-item">
+                            <div class="resume-dates">
+                                Start Date - End Date
+                            </div>
+                            <div class="resume-image">
+                                <img src="http://placehold.it/290x180" alt="Education School">
+                            </div>
+                            <div class="resume-content">
+                                <span class="resume-info">Program/Degree</span>
+                                <p>School Name</p>
+                            </div>
+                        </li>
+                        <li class="resume-item">
+                            <div class="resume-dates">
+                                Start Date - End Date
+                            </div>
+                            <div class="resume-image">
+                                <img src="http://placehold.it/290x180" alt="Education School">
+                            </div>
+                            <div class="resume-content">
+                                <span class="resume-info">Program/Degree</span>
+                                <p>School Name</p>
+                            </div>
+                        </li>
+                        <li class="resume-item">
+                            <div class="resume-dates">
+                                Start Date - End Date
+                            </div>
+                            <div class="resume-image">
+                                <img src="http://placehold.it/290x180" alt="Education School">
+                            </div>
+                            <div class="resume-content">
+                                <span class="resume-info">Program/Degree</span>
+                                <p>School Name</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </section>
     </main>
     <footer role="content-info">Footer</footer>
+
+<script src="https://use.fontawesome.com/30fd2fa9f1.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

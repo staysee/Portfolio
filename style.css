@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+    font-size: 1em;
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -31,8 +35,15 @@ section {
 section:nth-child(even) {
     background-color: #ddd;
 }
+
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .text-black {
@@ -46,7 +57,9 @@ nav {
     background: #aaa;
     display: flex;
     flex-flow: row wrap;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     justify-content: space-between;
     height: 0rem;
     min-height: 8vh;
@@ -136,18 +149,24 @@ button {
 
 /*------------------ About Me ------------------------*/
 #About {
-    height: calc(100vh - 50px);
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .about-container {
+    padding: 0 30px;
+}
+.about-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    border: 2px solid blue;
+    padding: 0 15px;
 }
 
+
+
 .aboutme {
-    border: 2px solid red;
     padding: 10px;
+    width: 33%;
 }
 
 .about-headshot {
@@ -157,98 +176,88 @@ button {
 
 /*------------------ Portfolio ------------------------*/
 #Portfolio {
-    height: calc(100vh - 50px);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .portfolio-container {
+    padding: 0 30px;
+}
+.portfolio-container ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 15px;
 }
 
 .portfolio-item {
     list-style: none;
+    width: 300px;
+    margin: 20px;
+}
+
+
+/*------------------ Resume ------------------------*/
+#Resume {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.experience-container ul, .education-container ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.resume-item {
+    list-style: none;
+    width: 300px;
+    margin: 20px;
+    background-color: rgb(167, 162, 162);
+}
+
+.resume-dates {
+    border-bottom: 1px solid #eee;
+    line-height: 1.7;
+    padding: 15px 20px;
+}
+
+.resume-image img {
+    width: 100%;
+    height: auto;
+}
+
+.resume-content {
+    padding: 9px 20px;
+}
+
+.resume-content span {
+    font-size: 1.3rem;
 }
 
 
 
-
-
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     nav .nav-items {
         flex-direction: column;
     }
-
     nav {
         flex-direction: column !important;
         display: block !important;
     }
-
     nav .toggle-collapse {
         display: initial;
     }
 
-    .about-container {
+    .about-content {
         flex-direction: column;
     }
+    .aboutme {
+        width: auto;
+    }
 }
-
-
-
-
-/* Mobile Phone */
-@media only screen and (max-width: 400px) {
-    body {
-        font-family: "Open Sans",
-        sans-serif; 
-        font-size: 20px;
-        color: #444;
-        text-align: center;
-        line-height: 1.5;
-    }
-    
-    nav,
-    footer {
-        padding: 1% 0;
-        background-color: #aaa;
-    }
-    
-    nav {
-        position: relative;
-        width: 220px;
-        margin: 15px;
-    }
-    
-    header {
-        padding: 12% 0;
-    }
-    
-    section {
-        min-height: 200px;
-        padding: 6% 0;
-        background-color: #bbb;
-    }
-    
-    section:nth-child(even) {
-        background-color: #ddd;
-    }
-
-    /* #navigation { display: none} */
-    .inner-profile {
-        background: none repeat scroll 0 0 rgba(60, 70, 80, 0.7);
-        height: 100%;
-        left: 0;
-        padding: 20px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-
-    #Home {
-        height: 100%;
-        width: 100;
-    }
-      
-}
-  
-  
