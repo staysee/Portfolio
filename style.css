@@ -36,6 +36,10 @@ section:nth-child(even) {
     background-color: #ddd;
 }
 
+footer {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -135,6 +139,9 @@ nav .toggle-collapse .toggle-icons i {
 #Home {
     padding-top: 80px;
     height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #Home .home-title {
@@ -144,7 +151,9 @@ nav .toggle-collapse .toggle-icons i {
 
 button {
     text-transform: uppercase;
-    padding: 15px;;
+    padding: 15px;
+    width: 200px;
+    margin: 0 auto;
 }
 
 /*------------------ About Me ------------------------*/
