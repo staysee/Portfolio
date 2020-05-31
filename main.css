@@ -275,3 +275,29 @@ button {
        
     }
 }
+
+/* ------- TABLETS -------- */
+@media (min-width: 768px) {
+    nav {
+        min-height: 5vh;
+    }
+
+    #About, #Portfolio, #Resume {
+        padding: 0 40px;
+    }
+    .about-me .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-me .about-content .about-headshot {
+        /* width: 50%; */
+        max-width: 300px;
+    }
+
+    .about-me .about-content .about-info {
+        width: 50%;
+        max-width: 300px;
+    }
+}
