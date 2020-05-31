@@ -5,13 +5,14 @@
     <meta name="viewport"  charset="utf-8" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <!-- Navigation Menu -->
     <nav id="navigation" class="nav" role="navigation">
         <div class="nav-menu">
-            <div class="nav-brand">
+            <div class="nav-home">
                 <a href="#" class="text-black">Home</a>
             </div>
         </div>
@@ -24,9 +25,6 @@
 
         <div>
             <ul class="nav-items">
-                <!-- <li class="nav-link">
-                    <a href="#" class="text-black">Home</a>
-                </li> -->
                 <li class="nav-link">
                     <a href="#About" class="text-black">About Me</a>
                 </li>
@@ -47,33 +45,50 @@
     </nav>
 
     <main role="main">
+        <!---------- HOME ---------->
         <header id="Home" role="banner">
             <h1 class="home-title">Landing Page</h1>
             <button type="button">Hire Me</button>
         </header>
 
-        <section id="About" role="region">
+        <!---------- ABOUT ME ---------->
+        <section id="About" class="about-me" role="region">
             <div class="about-container">
                 <h2>About Me</h2>
                 <div class="about-content">
-                    <div class="aboutme about-bio">
+                    <div class="about-bio">
                         <p>Elit cupidatat pariatur fugiat esse ex incididunt. Adipisicing commodo amet minim proident elit incididunt irure voluptate dolor. Magna deserunt reprehenderit Lorem adipisicing nulla sit.</p>
                     </div>
-                    <div class="aboutme about-headshot">
-                        <img src="https://via.placeholder.com/350">
+                    <div class="about-headshot">
+                        <img src="https://via.placeholder.com/260">
                     </div>
-                    <div class="aboutme about-info">
+                    <div class="about-info">
                         <h3>My Info</h3>
-                        <h4><span>Name :</span> Full Name</h4>
-                        <h4><span>Email :</span> Email Address</h4>
-                        <h4><span>Location :</span> Location</h4>
-                        <h4><span>Seeking :</span> Full Time Opportunities</h4>
+                        <p><span>Name :</span> Full Name</p>
+                        <p><span>Email :</span> Email Address</p>
+                        <p><span>Location :</span> Location</p>
+                        <p><span>Seeking :</span> Full Time Opportunities</p>
+                    </div>
+                    <div class="about-social">
+                        <ul>
+                            <li>
+                                <a class="social-link" href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="social-link" href="#">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="Portfolio" role="region">
+        <!---------- PORTFOLIO ---------->
+        <section id="Portfolio" class="portfolio" role="region">
             <div class="portfolio-container">
                 <h2>Portfolio</h2>
                 <ul>
@@ -121,11 +136,12 @@
             </div>
         </section>
 
-        <section id="Resume" role="region">
+        <!---------- RESUME ---------->
+        <section id="Resume" class="resume" role="region">
             
             <div class="resume-container">
                 <h2>Resume</h2>
-
+                <!---------- Experience ---------->
                 <div class="experience-container">
                     <h3>Experience</h3>
                     <ul>
@@ -180,6 +196,7 @@
                     </ul>
                 </div>
     
+                <!---------- Education ---------->
                 <h3>Education</h3>
                 <div class="education-container">
                     <ul>
@@ -240,6 +257,7 @@
     <footer role="content-info">Footer</footer>
 
 <script src="https://use.fontawesome.com/30fd2fa9f1.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

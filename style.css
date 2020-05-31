@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Livvic:400,600&display=swap');
 
-
 * {
   box-sizing: border-box;
 }
@@ -14,11 +13,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #444;
     line-height: 1.5;
-}
-
-footer {
-    padding: 1% 0;
-    background-color: #aaa;
 }
 
 header {
@@ -37,6 +31,8 @@ section:nth-child(even) {
 }
 
 footer {
+    padding: 1% 0;
+    background-color: #aaa;
     text-align: center;
 }
 
@@ -72,7 +68,7 @@ nav {
     z-index: 10;
 }
 
-nav .nav-brand a {
+nav .nav-home a {
     display: block;
     padding: 1rem 0;
     font-family: 'Arial';
@@ -105,7 +101,7 @@ nav .social {
 }
 
 nav .social i {
-    padding: 0 .2rem;
+    padding: 0 0.2rem;
 }
 
 nav .toggle-collapse {
@@ -252,13 +248,15 @@ button {
 
 
 @media only screen and (max-width: 768px) {
-    nav .nav-items {
-        flex-direction: column;
-    }
     nav {
         flex-direction: column !important;
         display: block !important;
     }
+    
+    nav .nav-items {
+        flex-direction: column;
+    }
+
     nav .toggle-collapse {
         display: initial;
     }
