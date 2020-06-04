@@ -1,8 +1,9 @@
-const toggleCollapse = document.querySelector('.toggle-collapse span');
-const nav = document.querySelector('.nav')
+$('.nav .toggle-collapse span').click( () => {
+    $('.nav').toggleClass('collapse')
+})
 
-// onclick event on toggle Collapse span tag
-toggleCollapse.onclick = () => {
+$('.nav-items a').click( () => {
     nav.classList.toggle('collapse')
-    console.log('clicked')
-}
+    $('.nav').addClass('quick-nav')
+    console.log('close')
+})

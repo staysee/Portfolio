@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Livvic:400,600&display=swap');
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
     color: #444;
-    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    margin: 0;
 }
 
 header {
@@ -21,9 +19,9 @@ header {
 }
 
 section {
+    background-color: #bbb;
     min-height: 200px;
     padding: 6% 0;
-    background-color: #bbb;
 }
 
 section:nth-child(even) {
@@ -31,8 +29,8 @@ section:nth-child(even) {
 }
 
 footer {
-    padding: 1% 0;
     background-color: #aaa;
+    padding: 1% 0;
     text-align: center;
 }
 
@@ -40,76 +38,36 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
 .text-black {
     color: black;
 }
 
-
-/*-------------------- navbar -------------------- */
+/*------------------ NAV BAR ------------------*/
 nav {
-    padding: 0 2rem;
     background: #aaa;
-    display: flex;
-    flex-flow: row wrap;
+    display: block;
+    height: 0rem;
+    min-height: 40px;;
+    padding: 0 2rem;
     position: fixed;
     top: 0;
-    width: 100%;
-    justify-content: space-between;
-    height: 0rem;
-    min-height: 8vh;
     overflow-y: hidden;
     transition: height 1s ease;
+    width: 100%;
     z-index: 10;
 }
 
 nav .nav-home a {
     display: block;
+    font-size: 1.2rem;
     padding: 1rem 0;
-    font-family: 'Arial';
-    font-size: 1.6rem;
-}
-
-nav .nav-items {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
-}
-
-nav .nav-items .nav-link {
-    padding: 1.3rem 1rem;
-    font-family: 'Arial';
-    font-size: 1.1rem;
-}
-
-nav .nav-items .nav-link:hover {
-    background: white;
-}
-
-nav .nav-items .nav-link:hover a {
-    color: black;
-}
-
-nav .social {
-    padding: 1.3rem 0;
-}
-
-nav .social i {
-    padding: 0 0.2rem;
 }
 
 nav .toggle-collapse {
-    position: absolute;
-    top: 0%;
-    width: 100%;
     cursor: pointer;
-    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 nav .toggle-collapse .toggle-icons {
@@ -119,152 +77,287 @@ nav .toggle-collapse .toggle-icons {
 }
 
 nav .toggle-collapse .toggle-icons i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+}
+
+nav .nav-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav .nav-items .nav-link {
+    padding: 0.4rem 0;
+}
+
+nav .nav-items .nav-link:hover {
+    background: #fff;
+}
+
+nav .nav-items .nav-link:hover a {
+    color: black;
+}
+
+nav .social i {
+    padding: 1rem 0.2rem;
 }
 
 .collapse {
-    height: 30rem;
+    height: 15rem;
 }
 
-.toggle-click, .toggle-click::before, .toggle-click::after {
-    width: 20px;
+.quick-nav {
+    transition: height 0s ease;
 }
 
-
-/*------------------ Home ------------------------*/
+/*------------------ HOME ------------------*/
 #Home {
-    padding-top: 80px;
-    height: calc(100vh - 50px);
     display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
 }
 
-#Home .home-title {
-    margin-bottom: 40px;
+#Home .home-title, #Home button {
     text-transform: uppercase;
+}
+
+#Home .home-title {
+    font-size: 3rem;
 }
 
 button {
-    text-transform: uppercase;
-    padding: 15px;
-    width: 200px;
     margin: 0 auto;
-}
-
-/*------------------ About Me ------------------------*/
-#About {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-.about-container {
-    padding: 0 30px;
-}
-.about-content {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 0 15px;
-}
-
-
-
-.aboutme {
     padding: 10px;
-    width: 33%;
+    border-radius: 2px;
 }
 
-.about-headshot {
+/*---------------- ABOUT ME ----------------*/
+#About {
+    padding: 0 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.about-me .about-headshot {
+    margin: 0 auto;
+    width: 80%;
+}
+.about-me .about-headshot img {
+    border: 8px solid #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    width: 100%;
+}
+
+.about-me .about-info p {
+    border-bottom: 1px solid #fff;
+}
+
+.about-me .about-info p span {
+    display: inline-block;
+    min-width: 70px;
+}
+
+.about-me .about-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-me .about-social ul li {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    display: inline-block;
+    height: 37px;
+    width: 37px;
+    margin: 5px;
+    padding:10px;
     text-align: center;
+    vertical-align: middle;
 }
 
+.about-me .about-social ul li a {
+    color: #000;
+}
 
-/*------------------ Portfolio ------------------------*/
+/*---------------- PORTFOLIO ----------------*/
 #Portfolio {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 .portfolio-container {
-    padding: 0 30px;
-}
-.portfolio-container ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0 15px;
+    flex-direction: column;
+    padding: 40px 0;
 }
 
-.portfolio-item {
+.portfolio ul {
     list-style: none;
-    width: 300px;
-    margin: 20px;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
 }
 
+.portfolio .portfolio-item {
+    margin-bottom: 3rem;
+}
 
-/*------------------ Resume ------------------------*/
+.portfolio .portfolio-image {
+    border: 5px solid white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.portfolio .portfolio-image img {
+    width: 100%;
+}
+
+.portfolio .portfolio-content p {
+    margin: 0;
+}
+
+/*---------------- RESUME ----------------*/
 #Resume {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 .resume-container {
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
+    padding: 40px 0;
 }
-.experience-container ul, .education-container ul {
+
+.experience-container, .education-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.resume-item {
+.resume .experience-container ul, .resume .education-container ul {
     list-style: none;
-    width: 300px;
-    margin: 20px;
-    background-color: rgb(167, 162, 162);
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
 }
 
-.resume-dates {
-    border-bottom: 1px solid #eee;
-    line-height: 1.7;
-    padding: 15px 20px;
+.resume .resume-item {
+    background-color: white;
+    margin-bottom: 3rem;
 }
 
-.resume-image img {
+.resume .resume-item .resume-dates {
+    padding: 10px;
+}
+
+.resume .resume-item .resume-image img {
     width: 100%;
-    height: auto;
 }
 
-.resume-content {
-    padding: 9px 20px;
+.resume .resume-item span {
+    padding: 10px;
 }
 
-.resume-content span {
-    font-size: 1.3rem;
+.resume .resume-content p {
+    padding: 0 10px 10px 10px;
 }
 
 
+/* ------- TABLETS -------- */
+@media (min-width: 600px) and (max-width: 767) {
+    #About, #Portfolio, #Resume {
+        padding: 0 40px;
+    }
+    .about-me .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-@media only screen and (max-width: 768px) {
+    .about-me .about-content .about-headshot {
+        width: 50%;
+        max-width: 300px;
+    }
+
+    .about-me .about-content .about-info {
+        width: 50%;
+        max-width: 300px;
+    }
+} 
+
+/* ------- DESKTOP -------- */
+@media (min-width: 768px) {
+    html {
+        font-size: 1rem;
+    }
+
     nav {
-        flex-direction: column !important;
-        display: block !important;
+        display: flex;
+        flex-flow: row wrap;
+        height: 40px;
+        justify-content: space-between;
     }
-    
+
+    nav .nav-menu .nav-home a {
+        font-size: 1rem;
+    }
+
     nav .nav-items {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
     }
 
+    nav .nav-items .nav-link {
+        padding: 1rem 1rem 0.4rem 1rem;
+
+    }
+
+    nav .nav-items .nav-link:hover {
+        background: transparent;
+        border-bottom: 4px solid black;
+    }
+
+    nav .social {
+        padding: 0.5rem 0.2rem 0.5rem 0.4rem;
+    }
     nav .toggle-collapse {
-        display: initial;
+        display: none;
     }
 
+    header .home-title {
+        font-size: 4.5rem;
+    }
+
+    #About, #Portfolio, #Resume {
+        padding: 60px 0;
+    }
+
+    #About {
+        height: 80vh;
+    }
+
+    .about-container, .portfolio-container, .resume-container {
+        padding: 0 40px;
+    }
     .about-content {
-        flex-direction: column;
+        display: flex;
     }
-    .aboutme {
-        width: auto;
+
+    .about-me .about-bio, .about-me .about-headshot, .about-me .about-info {
+        width: 30%;
     }
+
+    .portfolio ul, .resume ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .portfolio .portfolio-item, .resume .resume-item {
+        width: 23%;
+    }
+
 }
