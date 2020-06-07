@@ -3,7 +3,7 @@ $('.nav .toggle-collapse span').click( () => {
 })
 
 $('.nav-items a').click( () => {
-    nav.classList.toggle('collapse')
+    $('.nav').toggleClass('collapse')
     $('.nav').addClass('quick-nav')
     console.log('close')
 })
