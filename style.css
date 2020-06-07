@@ -104,6 +104,10 @@ nav .toggle-collapse .toggle-icons {
     padding: 1.4rem 4rem;
 }
 
+nav .toggle-collapse .toggle-icons span {
+    padding: 0 20px;
+}
+
 nav .toggle-collapse .toggle-icons i {
     font-size: 1.5rem;
 }
