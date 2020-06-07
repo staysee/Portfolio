@@ -44,6 +44,7 @@ section:nth-child(even) h2 {
 
 footer {
     background-color: var(--cadet);
+    color: var(--baby-powder);
     padding: 1% 0;
     text-align: center;
 }
@@ -71,6 +72,7 @@ button {
 /*------------------ NAV BAR ------------------*/
 nav {
     background: var(--baby-powder);
+    border-bottom: 1px solid #e2dada;
     display: block;
     height: 0rem;
     min-height: 40px;
@@ -302,8 +304,9 @@ nav .social i:hover {
 }
 
 .resume .resume-content p {
-    padding: 0 10px 10px 10px;
     font-size: smaller;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 0;
 }
 
 
@@ -336,6 +339,7 @@ nav .social i:hover {
     }
 
     nav {
+        border-bottom: 1px solid #e2dada;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -357,7 +361,7 @@ nav .social i:hover {
 
     nav .nav-items .nav-link:hover {
         background: transparent;
-        border-bottom: 4px solid black;
+        border-bottom: 4px solid var(--pewter-blue);
         border-left: none;
     }
 
