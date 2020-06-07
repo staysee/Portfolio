@@ -1,6 +1,6 @@
 $(window).resize(function() {
     let width = $(window).width()
-    if (width < 600) {
+    if (width < 768) {
         $(closeMenu)
         $(toggleMenu)
     }
