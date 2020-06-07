@@ -1,16 +1,21 @@
-function mobileNav() {
-    if ($('.nav').css('display') === "block") {
-
-        $('.nav-items a').click( () => {
-            $('.nav').toggleClass('collapse')
-            $('.nav').addClass('quick-nav')
-            console.log('close')
-        })
-
-        $('.nav .toggle-collapse span').click( () => {
-            $('.nav').toggleClass('collapse')
-        })
+$(window).resize(function() {
+    let width = $(window).width()
+    if (width < 600) {
+        $(closeMenu)
+        $(toggleMenu)
     }
+})
+
+function closeMenu() {
+    $('.nav-items a').click( () => {
+        $('.nav').removeClass('collapse')
+        $('.nav').addClass('quick-nav')
+        console.log('close')
+    })
 }
 
-$(mobileNav)
+function toggleMenu() {
+    $('.nav .toggle-collapse span').click( () => {
+        $('.nav').toggleClass('collapse')
+    })
+}

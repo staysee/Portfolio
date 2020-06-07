@@ -330,6 +330,10 @@ nav .social i:hover {
         width: 50%;
         max-width: 300px;
     }
+
+    .text-black {
+        color: red;
+    }
 } 
 
 /* ------- DESKTOP -------- */
