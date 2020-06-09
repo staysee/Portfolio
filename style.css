@@ -319,10 +319,6 @@ nav .social i:hover {
     font-size: smaller;
 }
 
-.resume .resume-item .resume-image {
-    /* height: 150px; */
-}
-
 .resume .resume-item .resume-image img {
     width: 100%;
 }
@@ -361,10 +357,6 @@ nav .social i:hover {
     .about-me .about-content .about-info {
         width: 50%;
         max-width: 300px;
-    }
-
-    .text-black {
-        color: red;
     }
 
     .portfolio .portfolio-list {
