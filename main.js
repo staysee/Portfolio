@@ -1,8 +1,8 @@
 $(window).resize(function() {
+    console.log('resize')
     let width = $(window).width()
-    if (width < 768) {
-        $(closeMenu)
-        $(toggleMenu)
+    if (width >= 768) {
+        $('.nav').removeClass('collapse')
     }
 })
 
@@ -15,7 +15,12 @@ function closeMenu() {
 }
 
 function toggleMenu() {
+    console.log('toggleMenu called')
     $('.nav .toggle-collapse span').click( () => {
         $('.nav').toggleClass('collapse')
+        console.log('toggle')
     })
 }
+
+$(closeMenu)
+$(toggleMenu)
