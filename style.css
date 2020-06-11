@@ -60,7 +60,7 @@ h1, h2, h3 {
 
 button {
     border-radius: 2px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 10px;
     text-transform: uppercase;
 }
@@ -168,7 +168,8 @@ nav .social i:hover {
 
 #Home .home-headline {
     color: var(--baby-powder);
-    margin-top: 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /*---------------- ABOUT ME ----------------*/
@@ -259,7 +260,7 @@ nav .social i:hover {
     margin-bottom: 3rem;
 }
 
-.portfolio .portfolio-content {
+.portfolio .portfolio-header, .portfolio .portfolio-desc {
     color: var(--baby-powder);
 }
 
@@ -292,13 +293,21 @@ nav .social i:hover {
     padding: 40px 0;
 }
 
-.experience-container, .education-container {
-    display: flex;
-    flex-direction: column;
+.resume .resume-download {
+    margin-bottom: 10px;
+}
+
+.resume h2 {
+    margin-bottom: 0;
 }
 
 .resume h3 {
     color: var(--gray-web);
+}
+
+.experience-container, .education-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .resume .experience-container ul, .resume .education-container ul {
@@ -312,6 +321,7 @@ nav .social i:hover {
     background-color: white;
     margin-bottom: 3rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin: 20px auto;
 }
 
 .resume .resume-item .resume-dates {
@@ -320,6 +330,7 @@ nav .social i:hover {
 }
 
 .resume .resume-item .resume-image img {
+    border-bottom: 1px solid #e2dada;
     width: 100%;
 }
 
@@ -337,7 +348,7 @@ nav .social i:hover {
 
 
 /* ------- TABLETS -------- */
-@media (min-width: 600px) and (max-width: 767px) {
+@media (min-width: 600px) and (max-width: 768px) {
     #About, #Portfolio, #Resume {
         padding: 0 40px;
     }
@@ -346,7 +357,7 @@ nav .social i:hover {
         flex-flow: row wrap;
     }
 
-    .about-me .about-bio {
+    .about-me .about-content .about-bio {
         width: 100%;
     }
 
@@ -359,29 +370,40 @@ nav .social i:hover {
         max-width: 300px;
     }
 
-    .portfolio .portfolio-list {
+    .portfolio .portfolio-container .portfolio-list {
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: column;
     }
 
     .portfolio .portfolio-list .portfolio-item {
         display: flex;
+        flex-flow: row wrap;
+        width: 100%;
     }
 
-    .resume .experience-container ul,
-    .resume .education-container ul {
+    .portfolio .portfolio-list .portfolio-item .image-container {
+        width: 30%;
+    }
+
+    .portfolio .portfolio-list .portfolio-item .portfolio-header {
+        margin-left: 21px;
+        width: 50%;
+    }
+
+    .portfolio .portfolio-list .portfolio-item .portfolio-desc {
+        width: 100%;
+    }
+
+    .resume .experience-list, .resume .education-list {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
     }
 
-    .resume .resume-item {
+    .resume .resume-container .resume-item {
         width: 45%;
     }
 
-    .resume .education-container .resume-image {
-        padding: 20px;
-    }
+
 } 
 
 /* ------- DESKTOP -------- */
@@ -435,16 +457,23 @@ nav .social i:hover {
     .about-container, .portfolio-container, .resume-container {
         padding: 0 40px;
     }
+
     .about-content {
         display: flex;
+        flex-flow: row wrap;
     }
 
     .about-me .about-bio, .about-me .about-info {
-        width: 30%;
+        width: 100%;
     }
 
     .about-me .about-headshot {
         max-width: 300px;
+        width: 30%;
+    }
+
+    .about-me .about-info {
+        width: 60%;
     }
 
     .portfolio ul, .resume ul{

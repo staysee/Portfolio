@@ -37,10 +37,10 @@
             </ul>
         </div>
         <div class="social text-black">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <i class="fa fa-file" aria-hidden="true"></i>
+            <a href="https://www.github.com/staysee" class="text-pewter" title="GitHub: staysee"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/staceysugiono" class="text-pewter" title="LinkedIn: Stacey Sugiono"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="mailto:me@staceysugiono.com" class="text-pewter" title="Email me@staceysugiono.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://bit.ly/37oeuC3" class="text-pewter" title="View Stacey's resume" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a>
         </div>
     </nav>
 
@@ -97,24 +97,37 @@
             <div class="portfolio-container">
                 <h2>Portfolio</h2>
                 <ul class="portfolio-list">
+
                     <li class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./images/sushi_party.png" alt="cartoon sushi">
+                        <div class="image-container">
+                            <div class="portfolio-image">
+                                <img src="./images/sushi_party.png" alt="cartoon sushi">
+                            </div>
                         </div>
-                        <div class="portfolio-content">
+
+                        <div class="portfolio-header">
                             <h3>Sushi Quiz</h3>
                             <h4><span><a class="text-pewter" href="https://staysee.github.io/sushi_quiz_v2/">Live Demo</a></span> | <span><a class="text-pewter" href="https://github.com/staysee/sushi_quiz_v2">GitHub</a></span></h4>
+                        </div>
+                        <div class="portfolio-desc">
                             <p class="desc">Description: Are you a sushi master? This is a responsive quiz for sushi lovers.</p>
                             <p class="tech">Technologies: jQuery, JavaScript, HTML, CSS</p>
                         </div>
+
                     </li>
+
                     <li class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./images/flowfinder_hoop.jpg" alt="girl hooping in forest">
+                        <div class="image-container">
+                            <div class="portfolio-image">
+                                <img src="./images/flowfinder_hoop.jpg" alt="girl hooping in forest">
+                            </div>
                         </div>
-                        <div class="portfolio-content">
+ 
+                        <div class="portfolio-header">
                             <h3>Flow Finder</h3>
                             <h4><span><a class="text-pewter" href="https://flow-finder-2.herokuapp.com/">Live Demo</a></span> | <span><a class="text-pewter" href="https://github.com/staysee/flow_finder_2.0">GitHub</a></span></h4>
+                        </div>
+                        <div class="portfolio-desc">
                             <p class="desc">Description: Flow Finder allows flow artists to share events related to flow props. Find where you can light up safely or bring out your LED toys at night.</p>
                             <p class="tech">Technologies: Node.js, Express, MongoDB, Mongoose, PassportJS, JSON Web Token (JWT) Authentication, HTML, CSS, JavaScript, jQuery</p>
                         </div>
@@ -128,10 +141,11 @@
             
             <div class="resume-container">
                 <h2>Resume</h2>
+                <a href="https://bit.ly/2UyCQnx" class="resume-download text-pewter">Download Resume</a>
                 <!---------- Experience ---------->
                 <div class="experience-container">
                     <h3>Experience</h3>
-                    <ul>
+                    <ul class="experience-list">
                         <li class="resume-item">
                             <div class="resume-dates">
                                 Jan 2017 - Current
@@ -186,13 +200,13 @@
                 <!---------- Education ---------->
                 <h3>Education</h3>
                 <div class="education-container">
-                    <ul>
+                    <ul class="education-list">
                         <li class="resume-item">
                             <div class="resume-dates">
                                 July 2020
                             </div>
                             <div class="resume-image">
-                                <img src="./images/thinkful-logo.png" alt="Education School">
+                                <img src="./images/thinkful.jpg" alt="Education School">
                             </div>
                             <div class="resume-content">
                                 <span class="resume-info">Engineering Flex</span>
@@ -204,7 +218,7 @@
                                 March 2016
                             </div>
                             <div class="resume-image">
-                                <img src="./images/generalassembly.jpg" alt="Education School">
+                                <img src="./images/general-assembly.jpg" alt="Education School">
                             </div>
                             <div class="resume-content">
                                 <span class="resume-info">Full Stack Web Development</span>
@@ -216,7 +230,7 @@
                                 May 2015
                             </div>
                             <div class="resume-image">
-                                <img src="./images/loyolauniversity.jpg" alt="Education School">
+                                <img src="./images/loyola.jpg" alt="Education School">
                             </div>
                             <div class="resume-content">
                                 <span class="resume-info">SLP Foundations</span>
@@ -241,7 +255,14 @@
             </div>
         </section>
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info">
+        <div class="footer-social">
+            <a href="https://www.github.com/staysee" class="text-pewter" title="GitHub: staysee"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/staceysugiono" class="text-pewter" title="LinkedIn: Stacey Sugiono"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="mailto:me@staceysugiono.com" class="text-pewter" title="Email me@staceysugiono.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://bit.ly/37oeuC3" class="text-pewter" title="View Stacey's resume" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a>
+        </div>
+    </footer>
 
 <script src="https://use.fontawesome.com/30fd2fa9f1.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
