@@ -41,7 +41,7 @@ section h2 {
     color: white;
 }
 section:nth-child(odd) h2 {
-    color: var(--pewter-blue);
+    color: var(--cadet);
 }
 
 footer {
@@ -72,6 +72,10 @@ button {
 
 .text-black {
     color: black;
+}
+
+.text-bright {
+    color: #D7EAF2;
 }
 
 .text-pewter {
