@@ -1,6 +1,8 @@
 :root {
     --baby-powder: #FAFAFA;
     --gray-web: #7A7A7A;
+    --downy: #74c8d5;
+    --half-baked: #83b7cf;
     --pewter-blue: #799CAC;
     --cadet: #4F6A74;
     --outer-space-crayola: #24373C;
@@ -59,7 +61,10 @@ h1, h2, h3 {
 }
 
 button {
-    border-radius: 2px;
+    background-color: var(--half-baked);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
     margin: 40px auto;
     padding: 10px;
     text-transform: uppercase;
@@ -67,6 +72,18 @@ button {
 
 .text-black {
     color: black;
+}
+
+.text-pewter {
+    color: var(--pewter-blue);
+}
+
+.text-downy {
+    color: var(--downy);
+}
+
+.text-white {
+    color: white;
 }
 
 /*------------------ NAV BAR ------------------*/
@@ -90,6 +107,10 @@ nav .nav-home a {
     display: block;
     font-size: 1.2rem;
     padding: 1rem 0;
+}
+
+nav .nav-home a:hover {
+    color: var(--pewter-blue);
 }
 
 nav .toggle-collapse {
@@ -226,8 +247,6 @@ nav .social i:hover {
     width: 37px;
     margin: 5px;
     padding:10px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 .about-me .about-social ul li:hover {
@@ -236,6 +255,8 @@ nav .social i:hover {
 
 .about-me .about-social ul li a {
     color: #000;
+    display: flex;
+    justify-content: center;
 }
 
 /*---------------- PORTFOLIO ----------------*/
@@ -274,12 +295,13 @@ nav .social i:hover {
     width: 100%;
 }
 
-.portfolio .portfolio-content p {
-    margin: 0;
+.portfolio .portfolio-item .portfolio-header h4 {
+    margin-bottom: 5px;
 }
 
-.text-pewter {
-    color: var(--pewter-blue);
+.portfolio .portfolio-item .portfolio-header p {
+    font-size: 0.8rem;
+    margin: 0;
 }
 
 /*---------------- RESUME ----------------*/
@@ -331,6 +353,7 @@ nav .social i:hover {
 
 .resume .resume-item .resume-image img {
     border-bottom: 1px solid #e2dada;
+    border-top: 1px solid #e2dada;
     width: 100%;
 }
 
@@ -346,9 +369,19 @@ nav .social i:hover {
     margin-bottom: 0;
 }
 
+/*---------------- FOOTER ----------------*/
+footer .footer-social a {
+    margin: 0 3px;
+}
+
+footer .footer-social a:hover {
+    cursor: pointer;
+    color: var(--downy);
+
+}
 
 /* ------- TABLETS -------- */
-@media (min-width: 600px) and (max-width: 768px) {
+@media (min-width: 600px) {
     #About, #Portfolio, #Resume {
         padding: 0 40px;
     }
@@ -388,6 +421,15 @@ nav .social i:hover {
     .portfolio .portfolio-list .portfolio-item .portfolio-header {
         margin-left: 21px;
         width: 50%;
+    }
+
+    .portfolio .portfolio-item .portfolio-header h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .portfolio .portfolio-item .portfolio-header h4 {
+        margin-top: 0;
     }
 
     .portfolio .portfolio-list .portfolio-item .portfolio-desc {
@@ -468,12 +510,18 @@ nav .social i:hover {
     }
 
     .about-me .about-headshot {
+        display: flex;
+        justify-content: flex-end;
         max-width: 300px;
-        width: 30%;
+        width: 40%;
+    }
+
+    .about-me .about-headshot .picture {
+        width: 70%;
     }
 
     .about-me .about-info {
-        width: 60%;
+        width: 50%;
     }
 
     .portfolio ul, .resume ul{
