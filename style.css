@@ -534,4 +534,5 @@ footer .footer-name p {
 @media (min-width: 1025px) {
     .resume .resume-container .resume-item {
         width: 23%;
+    }
 }
