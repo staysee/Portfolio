@@ -71,6 +71,10 @@ button {
     text-transform: uppercase;
 }
 
+button:hover {
+    background-color: var(--downy);
+}
+
 .text-black {
     color: black;
 }
