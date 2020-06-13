@@ -57,8 +57,8 @@ a {
 }
 
 h1, h2, h3 {
-    text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 
 button {
@@ -190,21 +190,21 @@ nav .social i:hover {
 
 
 #Home .home-title {
-    font-size: 3rem;
     color: var(--pewter-blue);
+    font-size: 3rem;
     margin-bottom: 0;
 }
 
 #Home .home-headline {
     color: var(--baby-powder);
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
 }
 
 #Home .home-arrow i {
     color: var(--baby-powder);
-    font-size: 2rem;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 /*---------------- ABOUT ME ----------------*/
@@ -219,8 +219,8 @@ nav .social i:hover {
 }
 
 .about-content {
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
 }
 
 .about-me .about-headshot {
@@ -408,15 +408,12 @@ footer .footer-name p {
         display: flex;
         flex-flow: row wrap;
     }
-
     .about-me .about-content .about-bio {
         width: 100%;
     }
-
     .about-me .about-content .about-headshot {
         width: 40%;
     }
-
     .about-me .about-content .about-info {
         width: 50%;
     }
@@ -425,31 +422,25 @@ footer .footer-name p {
         display: flex;
         flex-direction: column;
     }
-
     .portfolio .portfolio-list .portfolio-item {
         display: flex;
         flex-flow: row wrap;
         width: 100%;
     }
-
     .portfolio .portfolio-list .portfolio-item .image-container {
         width: 30%;
     }
-
     .portfolio .portfolio-list .portfolio-item .portfolio-header {
         margin-left: 21px;
         width: 50%;
     }
-
     .portfolio .portfolio-item .portfolio-header h3 {
         margin-top: 0;
         margin-bottom: 0;
     }
-
     .portfolio .portfolio-item .portfolio-header h4 {
         margin-top: 0;
     }
-
     .portfolio .portfolio-list .portfolio-item .portfolio-desc {
         width: 100%;
     }
@@ -458,12 +449,9 @@ footer .footer-name p {
         display: flex;
         flex-flow: row wrap;
     }
-
     .resume .resume-container .resume-item {
         width: 45%;
     }
-
-
 } 
 
 /* ------- DESKTOP/LARGE DEVICE -------- */
@@ -479,26 +467,21 @@ footer .footer-name p {
         justify-content: space-between;
         height: fit-content;
     }
-
     nav .nav-home a {
         padding: 10px;
     }
-    
     nav .nav-items {
         display: flex;
         flex-direction: row;
     }
-
     nav .nav-items .nav-link {
         padding: 12px 30px;
     }
-
     nav .nav-items .nav-link:hover {
         background: transparent;
         border-bottom: 4px solid var(--pewter-blue);
         border-left: none;
     }
-
     nav .nav-social i {
         padding: 20px 8px 0px 5px;
     }
@@ -517,27 +500,22 @@ footer .footer-name p {
     .about-container, .portfolio-container, .resume-container {
         padding: 0 40px;
     }
-
     .about-content {
         display: flex;
         flex-flow: row wrap;
     }
-
     .about-me .about-bio, .about-me .about-info {
         width: 100%;
     }
-
     .about-me .about-headshot {
         display: flex;
         justify-content: flex-end;
         max-width: 300px;
         width: 40%;
     }
-
     .about-me .about-headshot .picture {
         width: 70%;
     }
-
     .about-me .about-info {
         width: 50%;
     }
@@ -547,11 +525,9 @@ footer .footer-name p {
         flex-flow: row wrap;
         justify-content: space-around;
     }
-
     .portfolio .portfolio-item, .resume .resume-item {
         width: 23%;
     }
-
 }
 
 /* ------- LARGER DEVICE -------- */
