@@ -106,7 +106,6 @@ nav {
     position: fixed;
     top: 0;
     overflow-y: hidden;
-    /* overflow: hidden; */
     transition: height 1s ease;
     width: 100%;
     z-index: 10;
@@ -200,6 +199,12 @@ nav .social i:hover {
     color: var(--baby-powder);
     width: 80%;
     margin: 0 auto;
+}
+
+#Home .home-arrow i {
+    color: var(--baby-powder);
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 /*---------------- ABOUT ME ----------------*/
@@ -366,16 +371,17 @@ nav .social i:hover {
     width: 100%;
 }
 
-.resume .resume-item span {
-    padding: 10px;
+.resume .resume-item .resume-content p.resume-info {
+    margin: 0;
+    padding: 0 10px 10px 10px;
     color: var(--cadet);
     font-weight: 900;
 }
 
-.resume .resume-content p {
+.resume .resume-item .resume-content p.resume-location {
     font-size: smaller;
     padding: 0 10px 10px 10px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 /*---------------- FOOTER ----------------*/
@@ -413,7 +419,6 @@ footer .footer-name p {
 
     .about-me .about-content .about-info {
         width: 50%;
-        max-width: 300px;
     }
 
     .portfolio .portfolio-container .portfolio-list {
@@ -461,7 +466,7 @@ footer .footer-name p {
 
 } 
 
-/* ------- DESKTOP -------- */
+/* ------- DESKTOP/LARGE DEVICE -------- */
 @media (min-width: 768px) {
     html {
         font-size: 1.3rem;
@@ -547,4 +552,10 @@ footer .footer-name p {
         width: 23%;
     }
 
+}
+
+/* ------- LARGER DEVICE -------- */
+@media (min-width: 1025px) {
+    .resume .resume-container .resume-item {
+        width: 23%;
 }
