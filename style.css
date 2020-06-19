@@ -22,6 +22,7 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.7;
     margin: 0;
+    min-width: 320px;
 }
 
 header {
@@ -61,20 +62,6 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-button {
-    background-color: var(--half-baked);
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin: 40px auto;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-button:hover {
-    background-color: var(--downy);
-}
-
 .text-black {
     color: black;
 }
@@ -104,13 +91,14 @@ nav {
     background: var(--baby-powder);
     border-bottom: 1px solid #e2dada;
     display: block;
-    height: 0rem;
+    height: 0px;
     min-height: 40px;
     padding: 0 2rem;
     position: fixed;
     top: 0;
-    overflow-y: hidden;
+    overflow: hidden;
     transition: height 1s ease;
+    min-width: 320px;
     width: 100%;
     z-index: 10;
 }
@@ -176,7 +164,7 @@ nav .social i:hover {
 }
 
 .collapse {
-    height: 15rem;
+    height: 170px;
 }
 
 .quick-nav {
@@ -193,22 +181,41 @@ nav .social i:hover {
 }
 
 
-#Home .home-title {
-    color: var(--pewter-blue);
+.home .home-title {
+    color: var(--downy);
     font-size: 3rem;
     margin-bottom: 0;
 }
 
-#Home .home-headline {
+.home .home-headline {
     color: var(--baby-powder);
     margin: 0 auto;
     width: 80%;
 }
 
-#Home .home-arrow i {
+.home .home-arrow i {
     color: var(--baby-powder);
     cursor: pointer;
     font-size: 2rem;
+}
+
+.home .hire-button {
+    background-color: var(--half-baked);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px auto;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+.home .hire-button:hover {
+    background-color: var(--downy);
+}
+
+.home .hire-button a {
+    font-weight: bolder;
 }
 
 /*---------------- ABOUT ME ----------------*/

@@ -19,8 +19,8 @@ function toggleMenu() {
 }
 
 function runFunctions() {
-    $(closeMenu)
-    $(toggleMenu)
+    closeMenu()
+    toggleMenu()
 }
 
 $(runFunctions);
