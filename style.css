@@ -87,7 +87,7 @@ h1, h2, h3 {
 }
 
 /*------------------ NAV BAR ------------------*/
-nav {
+/* nav {
     background: var(--baby-powder);
     border-bottom: 1px solid #e2dada;
     display: block;
@@ -101,70 +101,65 @@ nav {
     min-width: 320px;
     width: 100%;
     z-index: 10;
-}
+} */
 
-nav .nav-home a {
-    display: block;
-    font-size: 1.2rem;
-    padding: 1rem 0;
-}
-
-nav .nav-home a:hover {
-    color: var(--pewter-blue);
-}
-
-nav .toggle-collapse {
+.menu-wrapper {
+    background-color: red;
+    position: fixed;
+    top: 25px;
+    left: 10px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    z-index: 1;
 }
 
-nav .toggle-collapse .toggle-icons {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1.4rem 4rem;
+nav .mobile-nav {
+    background-color: white;
+    width: 150px;
+    transform: translateX(-150px);
+    min-height: 100%;
+    position: fixed;
 }
 
-nav .toggle-collapse .toggle-icons span {
-    padding: 0 20px;
-}
-
-nav .toggle-collapse .toggle-icons i {
-    font-size: 1.5rem;
-}
-
-nav .nav-items {
+nav .nav-items-wrapper .nav-items {
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin: 0;
-    padding-left: 0;
+    margin-top: 50px;
+    padding: 0;
 }
 
-nav .nav-items .nav-link {
-    padding: 0.4rem 0;
+nav .nav-items-wrapper .nav-items .nav-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
 }
 
-nav .nav-items .nav-link:hover {
-    border-left: 4px solid var(--pewter-blue);
+nav .nav-items-wrapper .nav-items .nav-link:hover {
+    border-bottom: 4px solid var(--pewter-blue);
 }
 
-nav .nav-items .nav-link:hover a {
+nav .nav-items-wrapper .nav-items .nav-link:hover a {
     color: var(--pewter-blue);
 }
 
-nav .social i {
+nav .nav-items .social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .nav-items-wrapper .social i {
     padding: 1rem 0.2rem;
     cursor: pointer;
 }
 
-nav .social i:hover {
+nav .nav-items-wrapper .social i:hover {
     color: var(--pewter-blue)
 }
 
-.collapse {
-    height: 170px;
+.menu-active {
+    transform: translateX(0) !important;
 }
 
 .quick-nav {

@@ -1,26 +1,29 @@
-$(window).resize(function() {
-    let width = $(window).width();
-    if (width >= 768) {
-        $('.nav').removeClass('collapse');
-    }
-})
+let isActive = false;
+
+function activeMenu() {
+    $('.menu-wrapper').click( () => {
+        if (isActive) {
+            $('.mobile-nav').removeClass('menu-active');
+            isActive = false;
+        } else {
+            $('.mobile-nav').addClass('menu-active');
+            isActive = true;
+        }
+        console.log(isActive);
+    })
+}
 
 function closeMenu() {
-    $('.nav-items a').click( () => {
-        $('.nav').removeClass('collapse');
+    $('.mobile-nav a').click( () => {
+        $('.mobile-nav').removeClass('menu-active');
+        isActive = false;
         $('.nav').addClass('quick-nav');
     })
 }
 
-function toggleMenu() {
-    $('.nav .toggle-collapse span').click( () => {
-        $('.nav').toggleClass('collapse');
-    })
-}
-
 function runFunctions() {
-    closeMenu()
-    toggleMenu()
+    activeMenu();
+    closeMenu();
 }
 
 $(runFunctions);
