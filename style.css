@@ -464,6 +464,7 @@ footer .footer-name p {
 
     nav .nav-items-wrapper .nav-items {
         flex-direction: row;
+        justify-content: flex-end;
         margin: 0;
     }
 
