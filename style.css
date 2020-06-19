@@ -456,6 +456,10 @@ footer .footer-name p {
         display: none;
     }
 
+    nav {
+        min-width: 800px;
+    }
+    
     nav .nav-items-wrapper {
         transform: none;
         min-height: 5vh;
