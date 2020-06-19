@@ -89,24 +89,7 @@ h1, h2, h3 {
 }
 
 /*------------------ NAV BAR ------------------*/
-/* nav {
-    background: var(--baby-powder);
-    border-bottom: 1px solid #e2dada;
-    display: block;
-    height: 0px;
-    min-height: 40px;
-    padding: 0 2rem;
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-    transition: height 1s ease;
-    min-width: 320px;
-    width: 100%;
-    z-index: 10;
-} */
-
 .menu-wrapper {
-    /* background-color: rgba(37, 75, 124, 0.5); */
     color: black;
     cursor: pointer;
     position: fixed;
@@ -118,7 +101,7 @@ h1, h2, h3 {
     z-index: 1;
 }
 
-nav .mobile-nav {
+nav .nav-items-wrapper {
     background-color: white;
     box-shadow: 0 1px 6px rgba(0,0,0,.35);
     min-height: 100%;
@@ -158,7 +141,7 @@ nav .nav-items-wrapper .social i {
 }
 
 nav .nav-items-wrapper .social i:hover {
-    color: var(--pewter-blue)
+    color: var(--downy);
 }
 
 .menu-active {
@@ -469,37 +452,31 @@ footer .footer-name p {
         font-size: 1.3rem;
     }
 
-    nav {
-        border-bottom: 1px solid #e2dada;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        height: fit-content;
-    }
-    nav .nav-home a {
-        padding: 10px;
-    }
-    nav .nav-items {
-        display: flex;
-        flex-direction: row;
-    }
-    nav .nav-items .nav-link {
-        padding: 12px 30px;
-    }
-    nav .nav-items .nav-link:hover {
-        background: transparent;
-        border-bottom: 4px solid var(--pewter-blue);
-        border-left: none;
-    }
-    nav .nav-social i {
-        padding: 20px 8px 0px 5px;
-    }
-    nav .toggle-collapse {
+    .menu-wrapper {
         display: none;
     }
 
-    header .home-title {
-        font-size: 4.5rem;
+    nav .nav-items-wrapper {
+        transform: none;
+        min-height: 5vh;
+        width: 100%;
+    }
+
+    nav .nav-items-wrapper .nav-items {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    
+    nav .nav-items-wrapper .nav-items .nav-link {
+        padding: 12px 30px;
+    }
+    nav .nav-items .nav-link:hover {
+        border-bottom: 4px solid var(--pewter-blue);
+
+    }
+    nav .nav-social i {
+        padding: 20px 8px 0px 5px;
     }
 
     #About, #Portfolio, #Resume {
@@ -529,12 +506,37 @@ footer .footer-name p {
         width: 50%;
     }
 
-    .portfolio ul, .resume ul{
+    .portfolio .portfolio-container .portfolio-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .portfolio .portfolio-container .portfolio-list .portfolio-item {
+        width: 45%;
+    }
+
+    .portfolio .portfolio-container .portfolio-item .image-container {
+        width: 40%;
+    }
+
+    .portfolio .portfolio-container .portfolio-item .portfolio-desc .desc {
+        margin: 15px 0;
+    }
+
+
+    .resume ul{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
     }
-    .portfolio .portfolio-item, .resume .resume-item {
+
+    .portfolio .portfolio-item {
+        width: 45%;
+    }
+
+    .resume .resume-item {
         width: 23%;
     }
 }

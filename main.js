@@ -3,10 +3,10 @@ let isActive = false;
 function activeMenu() {
     $('.menu-wrapper').click( () => {
         if (isActive) {
-            $('.mobile-nav').removeClass('menu-active');
+            $('.nav-items-wrapper').removeClass('menu-active');
             isActive = false;
         } else {
-            $('.mobile-nav').addClass('menu-active');
+            $('.nav-items-wrapper').addClass('menu-active');
             isActive = true;
         }
         console.log(isActive);
@@ -14,8 +14,8 @@ function activeMenu() {
 }
 
 function closeMenu() {
-    $('.mobile-nav a').click( () => {
-        $('.mobile-nav').removeClass('menu-active');
+    $('.nav-items-wrapper a').click( () => {
+        $('.nav-items-wrapper').removeClass('menu-active');
         isActive = false;
         $('.nav').addClass('quick-nav');
     })
