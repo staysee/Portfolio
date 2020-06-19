@@ -90,7 +90,6 @@ h1, h2, h3 {
 
 /*------------------ NAV BAR ------------------*/
 .menu-wrapper {
-    color: black;
     cursor: pointer;
     position: fixed;
     height: var(--bar-height);
