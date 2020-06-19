@@ -9,7 +9,6 @@ function activeMenu() {
             $('.nav-items-wrapper').addClass('menu-active');
             isActive = true;
         }
-        console.log(isActive);
     })
 }
 
@@ -21,10 +20,9 @@ function closeMenu() {
     })
 }
 
-
-function runFunctions() {
+function runAll() {
     activeMenu();
     closeMenu();
 }
 
-$(runFunctions);
+$(runAll);
