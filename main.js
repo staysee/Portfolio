@@ -21,6 +21,7 @@ function closeMenu() {
     })
 }
 
+
 function runFunctions() {
     activeMenu();
     closeMenu();
