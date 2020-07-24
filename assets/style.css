@@ -153,7 +153,7 @@ nav .nav-items-wrapper .social i:hover {
 
 /*------------------ HOME ------------------*/
 #Home {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/background.jpg') no-repeat fixed center center / cover;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('./images/background.jpg') no-repeat fixed center center / cover;
     display: flex;
     height: 100vh;
     flex-direction: column;
