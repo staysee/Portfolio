@@ -1,0 +1,51 @@
+name: Deploy to Google Cloud Storage
+
+on:
+  push:
+    branches: ["main"]
+
+concurrency:
+  group: deploy-to-prod
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare files for upload (exclude workflow & git files)
+        run: |
+          mkdir -p out
+          rsync -a --delete \
+            --exclude ".git" \
+            --exclude ".github" \
+            --exclude "README.md" \
+            --exclude "LICENSE" \
+            ./ out/
+
+      - name: Authenticate with Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+
+      - name: Set up gcloud CLI
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+
+      - name: Deploy updated site to GCS bucket
+        run: |
+          gsutil -m rsync -r -d ./out gs://${{ secrets.GCS_BUCKET }}
+
+      - name: Print deployment summary
+        run: |
+          echo "--------------------------------------------------"
+          echo "🎉 Deployment complete!"
+          echo "✅ Files successfully synced to: gs://${{ secrets.GCS_BUCKET }}"
+          echo "🌐 Live site: https://staceysugiono.com"
+          echo "--------------------------------------------------"
