@@ -28,6 +28,13 @@ jobs:
             --exclude "LICENSE" \
             ./ out/
 
+      - name: 🔎 Verify required secrets exist
+        run: |
+          test -n "${{ secrets.GCP_PROJECT_ID }}" || (echo "❌ Missing GCP_PROJECT_ID" && exit 1)
+          test -n "${{ secrets.GCS_BUCKET }}" || (echo "❌ Missing GCS_BUCKET" && exit 1)
+          test -n "${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}" || (echo "❌ Missing GCP_SERVICE_ACCOUNT_KEY" && exit 1)
+          echo "✅ All required secrets are present."
+
       - name: Authenticate with Google Cloud
         uses: google-github-actions/auth@v2
         with:
